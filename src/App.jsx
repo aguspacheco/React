@@ -1,21 +1,17 @@
 import "./App.css";
 export function App() {
   return (
-    <article className="tw-followCard">
-      <header className="tw-followCard-header">
-        <img
-          className="tw-followCard-avatar"
-          alt="Avatar de Google"
-          src="https://unavatar.io/google"
-        />
-        <div className="tw-followCard-info">
-          <strong>Google Company</strong>
-          <span className="tw-followCard-infoUserName">@Google</span>
+    <article style={{ display: "flex", alignItems: "center", color: "#fff" }}>
+      <header>
+        <img alt="El avatar de Google" src="https://unavatar.io/google"></img>
+        <div>
+          <strong>Google</strong>
+          <span>@Google Company</span>
         </div>
       </header>
 
       <aside>
-        <button className="tw-followCard-button">Seguir</button>
+        <button>Seguir</button>
       </aside>
     </article>
   );
