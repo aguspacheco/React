@@ -1,18 +1,12 @@
 import "./App.css";
+import { TwitterFollowCard } from "./twitterFollowCard.jsx";
+
 export function App() {
   return (
-    <article style={{ display: "flex", alignItems: "center", color: "#fff" }}>
-      <header>
-        <img alt="El avatar de Google" src="https://unavatar.io/google"></img>
-        <div>
-          <strong>Google</strong>
-          <span>@Google Company</span>
-        </div>
-      </header>
-
-      <aside>
-        <button>Seguir</button>
-      </aside>
-    </article>
+    <>
+      <TwitterFollowCard userName="Fifa" name="Fifa org" />
+      <TwitterFollowCard userName="BocaJuniors" name="BocaJuniors" />
+      <TwitterFollowCard userName="Barcelonacf" name="Barcelonacf" />;
+    </>
   );
 }
